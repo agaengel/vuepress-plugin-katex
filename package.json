@@ -29,7 +29,7 @@
     "katex": "^0.13.3",
     "markdown-it-texmath": "^0.8.0"
   },
-  "scripts": {    
-    "prepare": "mkdir css & copy /Y .\\node_modules\\markdown-it-texmath\\css\\texmath.css .\\css\\texmath.css & mkdir css\\fonts & copy /Y .\\node_modules\\katex\\dist\\fonts .\\css\\fonts & copy /Y .\\node_modules\\katex\\dist\\katex.min.css .\\css\\katex.min.css"
+  "scripts": {
+    "prepare": "mkdir -p css & cp ./node_modules/markdown-it-texmath/css/texmath.css ./css/texmath.css & mkdir -p css/fonts & cp -r ./node_modules/katex/dist/fonts ./css & cp ./node_modules/katex/dist/katex.min.css ./css/katex.min.css"
   }
 }
